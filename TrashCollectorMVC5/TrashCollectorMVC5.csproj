@@ -195,9 +195,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelsDatabase\TrashUserAddress.cs" />
+    <Compile Include="ModelsDatabase\TrashUserPickupDate.cs" />
+    <Compile Include="ModelsDatabase\TrashUserPickupDateExtra.cs" />
+    <Compile Include="ModelsDatabase\TrashUserPickupDatePause.cs" />
+    <Compile Include="ModelsDatabase\TrashUserState.cs" />
+    <Compile Include="ModelsDatabase\TrashUserTelephoneNumber.cs" />
+    <Compile Include="ModelsDatabase\TrashUserZipCode.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="ModelsDatabase\TrashUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -261,6 +269,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Content\logos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
