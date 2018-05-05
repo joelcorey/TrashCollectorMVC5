@@ -15,7 +15,7 @@ namespace TrashCollectorMVC5.Models
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
             return userIdentity;
-        }
+        }    
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -29,5 +29,15 @@ namespace TrashCollectorMVC5.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<TrashUser> TrashUsers { get; set; }
+        public DbSet<TrashUserAddress> TrashUserAddresses { get; set; }
+        public DbSet<TrashUserPickupDate> TrashUserPickupDates { get; set; }
+        public DbSet<TrashUserPickupDateExtra> TrashUserPickupDateExtras { get; set; }
+        public DbSet<TrashUserPickupDatePause> TrashUserPickupDatePause { get; set; }
+        public DbSet<TrashUserState> TrashUserStates { get; set; }
+        public DbSet<TrashUserTelephoneNumber> TrashUserTelephoneNumbers { get; set; }
+        public DbSet<TrashUserZipCode> TrashUserZipCodes { get; set; }
+        public DbSet<TrashUserZipCodeAssigned> TrashUserZipCodeAssignments { get; set; }
     }
 }
